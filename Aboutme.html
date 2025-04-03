@@ -13,13 +13,14 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif; /
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
             background-color: #1f242d;
             color: #ffffff;
             line-height: 1.6;
+            margin: 0;
         }
 
         /* Navbar styles */
@@ -56,24 +57,119 @@
             color: #7cf03d;
         }
         
-
         /* Portfolio Section */
         .portfolio {
             padding: 100px 10%;
             text-align: center;
         }
 
-        
         .portfolio h1 {
             font-size: 40px;
             margin-bottom: 20px;
-            color: #7cf03d!important; 
+            color: #7cf03d;
         }
 
         .portfolio p {
             font-size: 18px;
             margin-bottom: 30px;
             color: #f0f0f0;
+            line-height: 1.8;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #1f242d;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 10%;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            color: #888;
+        }
+
+        .footer a {
+            color: #7cf03d;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        /* Media Queries for responsiveness */
+
+        /* For Tablets and Small Screens */
+        @media (max-width: 1024px) {
+            .navbar {
+                padding: 20px 5%;
+            }
+            .portfolio {
+                padding: 80px 5%;
+            }
+            .portfolio h1 {
+                font-size: 36px;
+            }
+            .portfolio p {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+            .footer {
+                padding: 30px 5%;
+            }
+        }
+
+        /* For Smartphones */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 5%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar ul {
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            .navbar ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            .portfolio {
+                padding: 60px 5%;
+            }
+            .portfolio h1 {
+                font-size: 32px;
+            }
+            .portfolio p {
+                font-size: 15px;
+                padding: 0 10px;
+            }
+            .footer {
+                padding: 20px 5%;
+            }
+        }
+
+        /* For Small Smartphones */
+        @media (max-width: 480px) {
+            .navbar .logo {
+                font-size: 24px;
+            }
+            .navbar ul li a {
+                font-size: 18px;
+            }
+            .portfolio h1 {
+                font-size: 28px;
+            }
+            .portfolio p {
+                font-size: 14px;
+                padding: 0 5px;
+            }
+            .footer p {
+                font-size: 14px;
+            }
         }
 
     </style>
@@ -106,6 +202,12 @@
             
             If you’re looking for a dedicated, enthusiastic, and innovative developer who enjoys problem-solving and team leadership, I’d love to connect and explore exciting opportunities together!
         </p>
-    </section>
+    </section>    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Akshat Shah. All Rights Reserved. | <a href="https://www.linkedin.com/in/akshat-shah-77673b284/" target="_blank">LinkedIn</a> | <a href="https://github.com/iamAkshatsh" target="_blank">GitHub</a> | <a href="mailto:youremail@example.com">Email</a></p>
+    </footer>
+
 </body>
 </html>
